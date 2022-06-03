@@ -17,11 +17,11 @@ int main(void)
 
 	while (i < 26)
 	{
-		if (alpha[i] != 'e' || alpha[i] != 'q')
+		if (alpha[i] != 'e' && alpha[i] != 'q')
 		{
 			putchar(alpha[i]);
-			i++;
 		}
+		i++;
 	}
 	putchar('\n');
 	return (0);
