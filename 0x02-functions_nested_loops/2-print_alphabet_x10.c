@@ -9,10 +9,17 @@
 void print_alphabet_x10(void)
 {
 	int i = 0;
+	char alpha[26] = "abcdefghijklmnopqrstuvwxyz";
+	int j = 0;
 
 	while (i < 10)
 	{
-		print_alphabet();
-		i++;;
+		while (j < 26)
+		{
+			_putchar(alpha[j]);
+			j++;
+		}
+		i++;
+		_putchar('\n');
 	}
 }
