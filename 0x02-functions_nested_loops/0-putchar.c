@@ -11,10 +11,12 @@
 int main(void)
 {
 	char str[8] = "_putchar";
+	int i = 0;
+
 	while (i < 8)
 	{
 		_putchar(i + '0');
 		i++;
 	}
-	return 0;
+	return (0);
 }
