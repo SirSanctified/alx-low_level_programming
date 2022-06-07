@@ -15,7 +15,7 @@ int main(void)
 
 	while (i < 8)
 	{
-		_putchar(i + '0');
+		_putchar(str[i]);
 		i++;
 	}
 	return (0);
