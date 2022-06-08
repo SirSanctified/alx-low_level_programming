@@ -14,7 +14,10 @@ int print_last_digit(int num)
 	int ret;
 	int abs;
 
-	abs = num < 0 ? -num : num;
+	if (num < 0)
+		abs = num * -1;
+	else
+		abs = num;
 	ret = abs % 10;
 	_putchar(ret + '0');
 	return (ret);
