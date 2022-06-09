@@ -1,12 +1,24 @@
 #include<stdio.h>
+#include "main.h"
 
 /**
  * main - fizz buzz
  *
  * Description: fizz buzz
  */
+int main(void)
+{
+	fizz_buzz();
+	return (0);
+}
 
-void main(void)
+/**
+ * fizz_buzz - fizz buzz
+ *
+ * Description: fizz buzz
+ */
+
+void fizz_buzz(void)
 {
 	int i;
 
