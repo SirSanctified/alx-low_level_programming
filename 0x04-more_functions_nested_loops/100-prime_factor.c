@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include "main.h"
+#include<math.h>
 
 /**
  * main - prime factor
@@ -27,6 +28,7 @@ long prime_factor(void)
 {
 	long num = 612852475143;
 	long currMaxPrime = -1;
+	long i;
 
 	if (num % 2 == 0)
 	{
@@ -35,7 +37,7 @@ long prime_factor(void)
 			num = num / 2;
 	}
 
-	for (long i = 3; i <= sqrt(num); i += 2)
+	for (i = 3; i <= sqrt(num); i += 2)
 	{
 		while (num % i == 0)
 		{
@@ -45,7 +47,7 @@ long prime_factor(void)
 	}
 
 	if (num > 2)
-		currMaPrime = num;
+		currMaxPrime = num;
 
 	return (currMaxPrime);
 }
