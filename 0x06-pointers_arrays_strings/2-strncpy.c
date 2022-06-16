@@ -18,8 +18,9 @@ char *_strncpy(char *s1, char *s2, int n)
 		i++;
 	}
 
-	while (i < n) {
-		dest[i] = '\0';
+	while (i < n)
+	{
+		s1[i] = '\0';
 		i++;
 	}
 	return (s1);
