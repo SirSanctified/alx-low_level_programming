@@ -5,6 +5,8 @@
  * @dest: the destination
  * @src: the destination
  * @n: number of bytes
+ *
+ * Description: copy bytes
  * Return: modified dest
  */
 
