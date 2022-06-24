@@ -4,7 +4,7 @@
  * main - print argument list
  * @argc: argument count
  * @argv: argument list
- * Return: 0
+ * Return: 0 on success
  */
 
 int main(int argc, char **argv)
