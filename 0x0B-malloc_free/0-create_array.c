@@ -1,5 +1,6 @@
 #include "main.h"
 #include<stdlib.h>
+#include<stdio.h>
 
 /**
  * create_array - create an array and initialise it with a specific char
@@ -16,18 +17,12 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 		return ('\0');
 
-	arr = malloc(sizeof(char) * size);
+	if (!(arr = malloc(sizeof(char) * size)))
+		return (NULL);
 
-	if (*arr != '\0')
+	for (i = 0; i < size; i++)
 	{
-		for (i = 0; i < size; i++)
-		{
-			arr[i] = c;
-		}
-		return (arr);
+		arr[i] = c;
 	}
-	else
-	{
-		return ('\0');
-	}
+	return (arr);
 }
