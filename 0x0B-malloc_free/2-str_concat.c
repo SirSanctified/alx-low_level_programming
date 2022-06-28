@@ -12,26 +12,28 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *temp = (char *) malloc(strlen(s1) + strlen(s2) + 1);
+	char *result = (char *) malloc(strlen(s1) + strlen(s2) + 1);
 
 	if (temp == NULL)
 		return (NULL);
 
-	while (s1)
+	char *temp = result;
+
+	while (*s1)
 	{
 		*temp = *s1;
 		temp++;
 		s1++;
 	}
 
-	while (s2)
+	while (*s2)
 	{
 		*temp = *s2;
 		temp++;
 		s2++;
 	}
 	*temp = '\0';
-	s1 = temp;
-	return (s1);
+
+	return (result);
 }
 
