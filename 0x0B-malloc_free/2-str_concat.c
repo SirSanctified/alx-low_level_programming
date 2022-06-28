@@ -18,15 +18,6 @@ char *str_concat(char *s1, char *s2)
 	if (result == NULL)
 		return (NULL);
 
-	if (*s1 == '\0' && *s2 != '\0')
-		return (s2);
-
-	if (*s1 != '\0' && *s2 == '\0')
-		return (s1);
-
-	if (*s1 == '\0' && *s2 == '\0')
-		return (NULL);
-
 	temp = result;
 
 	while (*s1)
