@@ -12,7 +12,7 @@ char **strtow(char *str)
 {
 	int i, j, k;
 	int size = strlen(str);
-	char **arr = malloc(sizeof(char) * size + 1);
+	char **arr = malloc(sizeof(char *) * size + 1);
 
 	if (arr == NULL)
 		return (NULL);
