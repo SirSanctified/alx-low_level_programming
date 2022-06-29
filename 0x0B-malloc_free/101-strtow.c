@@ -12,12 +12,12 @@ char **strtow(char *str)
 {
 	int i, j, k;
 	int size = strlen(str);
-	char **ar = malloc(sizeof(char) * size + 1);
+	char **arr = malloc(sizeof(char) * size + 1);
 
 	if (arr == NULL)
 		return (NULL);
 
-	if (str == NULL || str == "")
+	if (str == NULL)
 		return (NULL);
 
 	j = 0, k = 0;
