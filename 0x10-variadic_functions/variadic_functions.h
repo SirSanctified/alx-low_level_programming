@@ -1,5 +1,5 @@
 #ifndef MAIN_H
 #define MAIN_H
 int _putchar(char);
-int sum_them_all(const unsigned int);
+int sum_them_all(const unsigned int, ...);
 #endif
