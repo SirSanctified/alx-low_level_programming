@@ -7,7 +7,7 @@
  * Return: zero
  */
 
-int (*get_op_func(char *s)(int, int))
+int (*get_op_func(char *s))(int, int)
 {
 	op_t op_s[] = {
 		{"+", op_add},
