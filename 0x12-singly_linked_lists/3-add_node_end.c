@@ -12,21 +12,19 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new, *temp;
+	list_t *new;
 
-	temp = *head;
 	new = malloc(sizeof(list_t));
 
 	if (!new)
 		return (NULL);
 
-	while (temp->next != NULL)
-		temp = temp->next;
+	while (*head->next != NULL)
+		*head = *head->next;
 
 	new->str = strdup(str);
 	new->len = strlen(str);
-	temp->next = new;
+	*head->next = new;
 
-	free(temp);
 	return (new);
 }
