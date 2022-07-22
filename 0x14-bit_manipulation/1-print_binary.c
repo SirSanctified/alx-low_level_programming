@@ -8,7 +8,7 @@
  * Return: nothing
  */
 
-void print_binary(unsigned long int)
+void print_binary(unsigned long int n)
 {
 	if ((n >> 1) == 0 && n == 0)
 	{
