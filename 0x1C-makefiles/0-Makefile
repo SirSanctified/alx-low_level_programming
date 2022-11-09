@@ -1,0 +1,2 @@
+all: $(wildcard *.c)
+	gcc $(wildcard *.c) -o school
